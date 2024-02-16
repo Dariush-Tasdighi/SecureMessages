@@ -84,7 +84,7 @@ partial class EncryptMessageForm
 		// encryptedMessageTextBox
 		// 
 		encryptedMessageTextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-		encryptedMessageTextBox.BackColor = System.Drawing.Color.Black;
+		encryptedMessageTextBox.BackColor = System.Drawing.Color.DimGray;
 		encryptedMessageTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
 		encryptedMessageTextBox.ForeColor = System.Drawing.Color.White;
 		encryptedMessageTextBox.Location = new System.Drawing.Point(3, 395);
@@ -151,7 +151,7 @@ partial class EncryptMessageForm
 		// 
 		// publicKeyPemTextBox
 		// 
-		publicKeyPemTextBox.BackColor = System.Drawing.Color.Black;
+		publicKeyPemTextBox.BackColor = System.Drawing.Color.DimGray;
 		publicKeyPemTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
 		publicKeyPemTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
 		publicKeyPemTextBox.ForeColor = System.Drawing.Color.White;

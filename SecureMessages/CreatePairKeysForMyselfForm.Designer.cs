@@ -153,7 +153,7 @@
 			// 
 			// contentTextBox
 			// 
-			contentTextBox.BackColor = System.Drawing.Color.Black;
+			contentTextBox.BackColor = System.Drawing.Color.DimGray;
 			contentTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			contentTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
 			contentTextBox.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);

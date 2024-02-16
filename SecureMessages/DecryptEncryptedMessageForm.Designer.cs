@@ -109,7 +109,7 @@
 			// encryptedMessageTextBox
 			// 
 			encryptedMessageTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-			encryptedMessageTextBox.BackColor = System.Drawing.Color.Black;
+			encryptedMessageTextBox.BackColor = System.Drawing.Color.DimGray;
 			encryptedMessageTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			encryptedMessageTextBox.ForeColor = System.Drawing.Color.White;
 			encryptedMessageTextBox.Location = new System.Drawing.Point(3, 133);
@@ -180,7 +180,7 @@
 			// 
 			// privateKeyPemTextBox
 			// 
-			privateKeyPemTextBox.BackColor = System.Drawing.Color.Black;
+			privateKeyPemTextBox.BackColor = System.Drawing.Color.DimGray;
 			privateKeyPemTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			privateKeyPemTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
 			privateKeyPemTextBox.ForeColor = System.Drawing.Color.White;

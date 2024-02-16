@@ -39,7 +39,7 @@ partial class MainForm
 		myMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { optionsToolStripMenuItem, utilityToolStripMenuItem });
 		myMenuStrip.Location = new System.Drawing.Point(0, 0);
 		myMenuStrip.Name = "myMenuStrip";
-		myMenuStrip.Size = new System.Drawing.Size(867, 28);
+		myMenuStrip.Size = new System.Drawing.Size(628, 28);
 		myMenuStrip.TabIndex = 8;
 		myMenuStrip.Text = "menuStrip1";
 		// 
@@ -53,14 +53,14 @@ partial class MainForm
 		// aboutToolStripMenuItem
 		// 
 		aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-		aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+		aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
 		aboutToolStripMenuItem.Text = "&About";
 		aboutToolStripMenuItem.Click += AboutToolStripMenuItem_Click;
 		// 
 		// exitToolStripMenuItem
 		// 
 		exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-		exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+		exitToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
 		exitToolStripMenuItem.Text = "E&xit";
 		exitToolStripMenuItem.Click += ExitToolStripMenuItem_Click;
 		// 
@@ -96,7 +96,7 @@ partial class MainForm
 		// 
 		AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
 		AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-		ClientSize = new System.Drawing.Size(867, 590);
+		ClientSize = new System.Drawing.Size(628, 238);
 		Controls.Add(myMenuStrip);
 		Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 		IsMdiContainer = true;
@@ -104,7 +104,7 @@ partial class MainForm
 		Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 		Name = "MainForm";
 		StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-		Text = "DT Secure Messages - Version 1.2";
+		Text = "DT Secure Messages - Version 1.2.1";
 		WindowState = System.Windows.Forms.FormWindowState.Maximized;
 		Load += MainForm_Load;
 		myMenuStrip.ResumeLayout(false);

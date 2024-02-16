@@ -46,13 +46,13 @@ public partial class MainForm : System.Windows.Forms.Form
 
 	private void AboutToolStripMenuItem_Click(object sender, System.EventArgs e)
 	{
-		//var form =
-		//	new AboutForm
-		//	{
-		//		MdiParent = this,
-		//	};
+		var form =
+			new AboutForm
+			{
+				MdiParent = this,
+			};
 
-		//form.Show();
+		form.Show();
 	}
 
 	private void ExitToolStripMenuItem_Click(object sender, System.EventArgs e)
