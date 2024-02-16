@@ -1,11 +1,15 @@
 namespace SecureMessages;
 
-internal static class Program
+internal static class Program : object
 {
+	static Program()
+	{
+	}
+
 	[System.STAThread]
-	static void Main()
+	private static void Main()
 	{
 		ApplicationConfiguration.Initialize();
-        System.Windows.Forms.Application.Run(new MainForm());
+		System.Windows.Forms.Application.Run(new MainForm());
 	}
 }

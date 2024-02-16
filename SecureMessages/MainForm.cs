@@ -7,78 +7,56 @@ public partial class MainForm : System.Windows.Forms.Form
 		InitializeComponent();
 	}
 
-	public int KeySize { get; set; }
-	public string Path { get; set; } = "";
-
 	private void MainForm_Load(object sender, System.EventArgs e)
 	{
-		KeySize = 4096;
-		Path = @"C:\Keys";
 	}
 
-	private void EncryptButton_Click
-		(object sender, System.EventArgs e)
+	private void EncryptToolStripMenuItem_Click(object sender, System.EventArgs e)
 	{
-		var plainText =
-			plainTextTextBox.Text;
+		var form =
+			new EncryptMessageForm
+			{
+				MdiParent = this,
+			};
 
-		if (string.IsNullOrWhiteSpace(value: plainText))
-		{
-			// TODO: Display Message!
-
-			return;
-		}
-
-		var publicKeyPemPathName =
-			$"{Path}\\PublicKey.pem";
-
-		if (System.IO.File.Exists
-			(path: publicKeyPemPathName) == false)
-		{
-			// TODO: Display Message!
-
-			return;
-		}
-
-		var publicKeyPem = System.IO.File
-			.ReadAllText(path: publicKeyPemPathName);
-
-		encryptedTextTextBox.Text = Dtat.RsaHelper.Encrypt
-			(plainText: plainText, publicKeyPem: publicKeyPem);
+		form.Show();
 	}
 
-	private void DecryptButton_Click
-		(object sender, System.EventArgs e)
+	private void DecryptToolStripMenuItem_Click(object sender, System.EventArgs e)
 	{
-		var encryptedBase64String =
-			encryptedTextTextBox.Text;
+		var form =
+			new DecryptEncryptedMessageForm
+			{
+				MdiParent = this,
+			};
 
-		if (string.IsNullOrWhiteSpace
-			(value: encryptedBase64String))
-		{
-			// TODO: Display Message!
+		form.Show();
+	}
 
-			return;
-		}
+	private void CreatePairKeysForMyselfToolStripMenuItem_Click(object sender, System.EventArgs e)
+	{
+		var form =
+			new CreatePairKeysForMyselfForm
+			{
+				MdiParent = this,
+			};
 
-		var privateKeyPathName =
-			$"{Path}\\PrivateKey.pem";
+		form.Show();
+	}
 
-		if (System.IO.File.Exists
-			(path: privateKeyPathName) == false)
-		{
-			// TODO: Display Message!
+	private void AboutToolStripMenuItem_Click(object sender, System.EventArgs e)
+	{
+		//var form =
+		//	new AboutForm
+		//	{
+		//		MdiParent = this,
+		//	};
 
-			return;
-		}
+		//form.Show();
+	}
 
-		var privateKeyPem =
-			System.IO.File.ReadAllText(path: privateKeyPathName);
-
-		using var rsa = new System.Security
-			.Cryptography.RSACryptoServiceProvider(dwKeySize: KeySize);
-
-		plainTextTextBox.Text = Dtat.RsaHelper.Decrypt
-			(encryptedBase64String: encryptedBase64String, privateKeyPem: privateKeyPem);
+	private void ExitToolStripMenuItem_Click(object sender, System.EventArgs e)
+	{
+		System.Windows.Forms.Application.Exit();
 	}
 }
