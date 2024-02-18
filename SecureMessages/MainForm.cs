@@ -33,10 +33,10 @@ public partial class MainForm : System.Windows.Forms.Form
 		form.Show();
 	}
 
-	private void CreatePairKeysForMyselfToolStripMenuItem_Click(object sender, System.EventArgs e)
+	private void YourKeysManagerToolStripMenuItem_Click(object sender, System.EventArgs e)
 	{
 		var form =
-			new CreatePairKeysForMyselfForm
+			new YourKeysManagerForm
 			{
 				MdiParent = this,
 			};

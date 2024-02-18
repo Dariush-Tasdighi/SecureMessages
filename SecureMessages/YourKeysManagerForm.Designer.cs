@@ -1,6 +1,6 @@
 ﻿namespace SecureMessages
 {
-	partial class CreatePairKeysForMyselfForm
+	partial class YourKeysManagerForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -166,7 +166,7 @@
 			contentTextBox.Size = new System.Drawing.Size(534, 508);
 			contentTextBox.TabIndex = 0;
 			// 
-			// CreatePairKeysForMyselfForm
+			// YourKeysManagerForm
 			// 
 			AcceptButton = createButton;
 			AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -176,8 +176,8 @@
 			Controls.Add(mainSplitter);
 			Controls.Add(mainPanel);
 			Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
-			Name = "CreatePairKeysForMyselfForm";
-			Text = "Create Pair Keys for Myself";
+			Name = "YourKeysManagerForm";
+			Text = "Your Keys Manager";
 			Load += CreatePairKeysForMyselfForm_Load;
 			mainPanel.ResumeLayout(false);
 			mainPanel.PerformLayout();

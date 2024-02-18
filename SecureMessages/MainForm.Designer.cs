@@ -29,7 +29,7 @@ partial class MainForm
 		utilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 		encryptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 		decryptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-		createPairKeysForMyselfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+		yourKeysManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 		myMenuStrip.SuspendLayout();
 		SuspendLayout();
 		// 
@@ -39,7 +39,7 @@ partial class MainForm
 		myMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { optionsToolStripMenuItem, utilityToolStripMenuItem });
 		myMenuStrip.Location = new System.Drawing.Point(0, 0);
 		myMenuStrip.Name = "myMenuStrip";
-		myMenuStrip.Size = new System.Drawing.Size(628, 28);
+		myMenuStrip.Size = new System.Drawing.Size(837, 28);
 		myMenuStrip.TabIndex = 8;
 		myMenuStrip.Text = "menuStrip1";
 		// 
@@ -66,7 +66,7 @@ partial class MainForm
 		// 
 		// utilityToolStripMenuItem
 		// 
-		utilityToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { encryptToolStripMenuItem, decryptToolStripMenuItem, createPairKeysForMyselfToolStripMenuItem });
+		utilityToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { encryptToolStripMenuItem, decryptToolStripMenuItem, yourKeysManagerToolStripMenuItem });
 		utilityToolStripMenuItem.Name = "utilityToolStripMenuItem";
 		utilityToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
 		utilityToolStripMenuItem.Text = "&Utility";
@@ -74,29 +74,31 @@ partial class MainForm
 		// encryptToolStripMenuItem
 		// 
 		encryptToolStripMenuItem.Name = "encryptToolStripMenuItem";
-		encryptToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+		encryptToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
 		encryptToolStripMenuItem.Text = "&Encrypt";
 		encryptToolStripMenuItem.Click += EncryptToolStripMenuItem_Click;
 		// 
 		// decryptToolStripMenuItem
 		// 
 		decryptToolStripMenuItem.Name = "decryptToolStripMenuItem";
-		decryptToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+		decryptToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
 		decryptToolStripMenuItem.Text = "&Decrypt";
 		decryptToolStripMenuItem.Click += DecryptToolStripMenuItem_Click;
 		// 
-		// createPairKeysForMyselfToolStripMenuItem
+		// yourKeysManagerToolStripMenuItem
 		// 
-		createPairKeysForMyselfToolStripMenuItem.Name = "createPairKeysForMyselfToolStripMenuItem";
-		createPairKeysForMyselfToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
-		createPairKeysForMyselfToolStripMenuItem.Text = "&Create Pair Keys For Myself";
-		createPairKeysForMyselfToolStripMenuItem.Click += CreatePairKeysForMyselfToolStripMenuItem_Click;
+		yourKeysManagerToolStripMenuItem.Name = "yourKeysManagerToolStripMenuItem";
+		yourKeysManagerToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+		yourKeysManagerToolStripMenuItem.Text = "Your Keys Manager";
+		yourKeysManagerToolStripMenuItem.Click += YourKeysManagerToolStripMenuItem_Click;
 		// 
 		// MainForm
 		// 
 		AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
 		AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-		ClientSize = new System.Drawing.Size(628, 238);
+		BackgroundImage = Properties.Resources.Wallpaper_001;
+		BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+		ClientSize = new System.Drawing.Size(837, 525);
 		Controls.Add(myMenuStrip);
 		Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 		IsMdiContainer = true;
@@ -104,7 +106,7 @@ partial class MainForm
 		Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 		Name = "MainForm";
 		StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-		Text = "DT Secure Messages - Version 1.2.1";
+		Text = "DT Secure Messages - Version 1.2.2";
 		WindowState = System.Windows.Forms.FormWindowState.Maximized;
 		Load += MainForm_Load;
 		myMenuStrip.ResumeLayout(false);
@@ -119,7 +121,7 @@ partial class MainForm
 	private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
 	private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
 	private System.Windows.Forms.ToolStripMenuItem utilityToolStripMenuItem;
-	private System.Windows.Forms.ToolStripMenuItem createPairKeysForMyselfToolStripMenuItem;
+	private System.Windows.Forms.ToolStripMenuItem yourKeysManagerToolStripMenuItem;
 	private System.Windows.Forms.ToolStripMenuItem encryptToolStripMenuItem;
 	private System.Windows.Forms.ToolStripMenuItem decryptToolStripMenuItem;
 }

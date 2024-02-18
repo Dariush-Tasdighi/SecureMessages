@@ -2,9 +2,9 @@
 
 namespace SecureMessages;
 
-public partial class CreatePairKeysForMyselfForm : Dtat.BaseForm
+public partial class YourKeysManagerForm : Dtat.BaseForm
 {
-	public CreatePairKeysForMyselfForm()
+	public YourKeysManagerForm()
 	{
 		InitializeComponent();
 	}
